@@ -34,18 +34,25 @@ console.log(longitudesPaises);
 
 //8
 
-const paisesIa = ['Albania', 'Bolivia','Ethiopia']
+const paisesIa = ['Albania', 'Bolivia', 'Ethiopia']
 
 let terminanEnIA = false;
 
-for (let i = 0; i < paisesIa.length; i++){
+for (let i = 0; i < paisesIa.length; i++) {
     if (paisesIa[i].includes("ia")) {
         terminanEnIA = true;
-console.log( 'Estos países terminan en ia', paisesIa)
+        console.log('Estos países terminan en ia', paisesIa)
     }
-    else{
-        console.log( 'Estos son países que terminan sin ia')
+    else {
+        console.log('Estos son países que terminan sin ia')
     }
+}
+
+//14
+const tecnologias = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+
+for (let i = 0; i < tecnologias.length; i++) {
+    console.log(tecnologias[i]);
 }
 
 
@@ -58,3 +65,16 @@ for (let i = frutas.length - 1; i >= 0; i--) {
 }
 
 console.log(frutasInvertidas);
+
+
+//16
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+];
+
+for (let i = 0; i < fullStack.length; i++) {
+    for (let j = 0; j < fullStack[i].length; j++) {
+        console.log(fullStack[i][j].toUpperCase());
+    }
+}
